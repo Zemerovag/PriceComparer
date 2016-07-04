@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace DataModel
+﻿namespace PriceComparer.DataModel
 {
     public interface ISupplier
     {

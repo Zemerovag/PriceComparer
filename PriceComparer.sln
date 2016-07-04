@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceComparer", "PriceComparer\PriceComparer.csproj", "{09F64826-DE78-4C40-9E76-175FFF8F7718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{F8B541CE-A175-4BAE-8D8C-3296DDC764A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceComparer.DataModel", "PriceComparer.DataModel\PriceComparer.DataModel.csproj", "{F8B541CE-A175-4BAE-8D8C-3296DDC764A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
