@@ -1,15 +1,15 @@
-﻿using System.Windows;
+﻿using PriceComparer.ViewModel;
 
-namespace PriceComparer
+namespace PriceComparer.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel mainWindowViewModel)
         {
-            InitializeComponent();
+            DataContext = mainWindowViewModel;
         }
     }
 }
