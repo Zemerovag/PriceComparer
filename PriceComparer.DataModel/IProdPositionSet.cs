@@ -1,9 +1,12 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Drawing;
 
 namespace PriceComparer.DataModel
 {
     public interface IProdPositionSet
     {
-        ObservableCollection<IProdPosition> ProductPositions { get; set; }
+        string Name { get; set; }
+        Color TileColor { get; set; }
+        List<IProdPosition> ProductPositions { get; set; }
     }
 }

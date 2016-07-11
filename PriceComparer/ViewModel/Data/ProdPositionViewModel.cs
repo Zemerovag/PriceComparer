@@ -1,6 +1,6 @@
 ﻿namespace PriceComparer.ViewModel.Data
 {
-    class ProdPositionViewModel
+    public class ProdPositionViewModel
     {
     }
 }

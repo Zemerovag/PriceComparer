@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="ArgumentChecks.cs" />
     <Compile Include="Extensions\ExpressionExtensions.cs" />
+    <Compile Include="ViewModel\Data\ProdPositionSetViewModel.cs" />
     <Compile Include="ViewModel\Data\ProdPositionViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />

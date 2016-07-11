@@ -1,10 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 
 namespace PriceComparer.DataModel
 {
     public interface IProduct
     {
         string Name { get; set; }
-        ObservableCollection<IProductSource> ProductSources { get; set; }
+        List<IProductSource> ProductSources { get; set; }
     }
 }
