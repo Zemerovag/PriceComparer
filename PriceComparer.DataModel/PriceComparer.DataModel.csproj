@@ -40,12 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IProductSource.cs" />
-    <Compile Include="ISupplier.cs" />
-    <Compile Include="IProdPosition.cs" />
-    <Compile Include="IProduct.cs" />
-    <Compile Include="IProdPositionSet.cs" />
+    <Compile Include="Interfaces\IProductSource.cs" />
+    <Compile Include="Interfaces\ISupplier.cs" />
+    <Compile Include="Interfaces\IProdPosition.cs" />
+    <Compile Include="Interfaces\IProduct.cs" />
+    <Compile Include="Interfaces\IProdPositionSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Implementations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

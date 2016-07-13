@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace PriceComparer.DataModel
+namespace PriceComparer.DataModel.Interfaces
 {
     public interface IProdPositionSet
     {

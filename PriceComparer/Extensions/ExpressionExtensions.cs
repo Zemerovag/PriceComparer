@@ -16,7 +16,7 @@ namespace PriceComparer.Extensions
             var propertyInfo = propertyExpression.GetPropertyInfo();
             if (propertyInfo == null)
             {
-                throw new ArgumentException(ArgumentIsNotAPropertyException, nameof(propertyExpression));
+                throw new ArgumentException(ArgumentIsNotAPropertyException, "propertyExpression");
             }
 
             return propertyInfo.Name;
@@ -29,7 +29,7 @@ namespace PriceComparer.Extensions
             var pi = propertyExpression.GetPropertyInfo();
             if (pi == null)
             {
-                throw new ArgumentException(ArgumentIsNotAPropertyException, nameof(propertyExpression));
+                throw new ArgumentException(ArgumentIsNotAPropertyException, "propertyExpression");
             }
 
             return pi.Name;
@@ -64,7 +64,7 @@ namespace PriceComparer.Extensions
                 return memberExpression.Member as PropertyInfo;
             }
 
-            throw new ArgumentException(InvalidArgumentException, nameof(propertyExpression));
+            throw new ArgumentException(InvalidArgumentException, "propertyExpression");
         }
     }
 }

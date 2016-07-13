@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PriceComparer.DataModel
+namespace PriceComparer.DataModel.Interfaces
 {
     public interface IProduct
     {

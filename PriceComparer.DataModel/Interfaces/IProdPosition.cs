@@ -1,9 +1,9 @@
-﻿namespace PriceComparer.DataModel
+﻿namespace PriceComparer.DataModel.Interfaces
 {
     public interface IProdPosition
     {
         IProduct Product { get; set; }
-        ISupplier Supplier { get; set; }
+        IProductSource ProdSource { get; set; }
         int Count { get; }
     }
 }
