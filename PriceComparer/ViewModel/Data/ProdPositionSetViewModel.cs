@@ -5,15 +5,15 @@ namespace PriceComparer.ViewModel.Data
 {
     public class ProdPositionSetViewModel : ViewModelBase
     {
-        public ProdPositionSetViewModel(string name) : this(name, Colors.Green, new ObservableCollection<ProdPositionViewModel>())
+        public ProdPositionSetViewModel(string name) : this(name, Colors.Green)
         {
         }
 
-        public ProdPositionSetViewModel(string name, Color tileColor, ObservableCollection<ProdPositionViewModel> productPositions)
+        public ProdPositionSetViewModel(string name, Color tileColor)
         {
             _name = name;
             _tileColor = tileColor;
-            _productPositions = productPositions;
+            _productPositions = new ObservableCollection<ProdPositionViewModel>();
         }
 
         private string _name;

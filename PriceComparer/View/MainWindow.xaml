@@ -4,8 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Price Comparer" Height="440" Width="700">
+        Title="Price Comparer" Height="500" Width="850">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Width="30" Name="ButtonAddProdPositionSet"
+                        Content="+"
+                        Command="{Binding AddProdPositionSetCommand}"/>
+                <Button Width="30" Name="ButtonDeleteProdPositionSet"
+                        Content="-"
+                        Command="{Binding DeleteProdPositionSetCommand}"/>
+            </StackPanel>
+            <ListBox Grid.Row="1"
+                     Name="ListBoxProductSets"
+                     SelectionMode="Single"
+                     ItemsSource="{Binding ProdPositionSets}"
+                     SelectedItem="{Binding SelectedProdPositionSet}"
+                     DisplayMemberPath="Name"/>
+        </Grid>
     </Grid>
 </Window>

@@ -10,6 +10,7 @@ namespace PriceComparer.View
         public MainWindow(MainWindowViewModel mainWindowViewModel)
         {
             DataContext = mainWindowViewModel;
+            InitializeComponent();
         }
     }
 }

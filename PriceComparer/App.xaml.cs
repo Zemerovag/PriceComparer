@@ -11,7 +11,6 @@ namespace PriceComparer
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            ShutdownMode = ShutdownMode.OnExplicitShutdown;
             ShowMainWindow();
         }
 
